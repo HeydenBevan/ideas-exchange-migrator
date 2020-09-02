@@ -1,3 +1,8 @@
+# LINUX/Mac
+communicator/communicator
+migrator/migrator
+reader/reader
+
 # Binaries for programs and plugins
 *.exe
 *.exe~

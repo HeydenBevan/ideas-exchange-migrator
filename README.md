@@ -18,17 +18,19 @@ Current idea is to:
 4. Call the `Communicator` server to start a job
 5. `Communicator` server will add it into a Queue and return a `201` to the `Reader`
 6. Every 2 hours, the `Migrator` will check the queue for items to migrate
-7. It will transform the data into the `DestinationTransferObject` requirements
+7. It will transform the data into the `DTO` requirements
 8. `Migrator` will then call the destination service to take in the new items
 9. `Migrator` will then call the `Communicator` to alert that the Job is done
 10. `Communicator` will then handle communications on the Forum (IE: Post a Status Update on the Migrated Items on the Khoros Community Exchange)
 
 # Tech Decisions
-Will be using [Go (Golang)]() as the tech stack of choice, the reasons being are:
+Will be using [Go (Golang)](https://golang.org/) as the tech stack of choice, the reasons being are:
 1. It's lightweight.
 2. Easy to learn.
 3. Has less reliance on 3rd party packages, strongly advise using the stdlib wherever possible.
 4. It's my favourite language and the one I'm most comfortable, should I lose innovation tokens for JS? No way.
+
+We like the `GOPATH` in this house, take a look if you're not familiar: [How to Write Go Code (with GOPATH)](https://golang.org/doc/gopath_code.html)
 
 # Repo structure!
 | Directory | Sub Dir | Purpose |
