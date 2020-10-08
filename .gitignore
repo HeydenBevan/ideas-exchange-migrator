@@ -1,14 +1,15 @@
-# LINUX/Mac
+# Binaries for programs and plugins
 communicator/communicator
 migrator/migrator
 reader/reader
-
-# Binaries for programs and plugins
 *.exe
 *.exe~
 *.dll
 *.so
 *.dylib
+
+# Hiding secrets from VSC
+.env
 
 # Test binary, built with `go test -c`
 *.test
